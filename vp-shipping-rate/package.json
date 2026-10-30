@@ -1,0 +1,22 @@
+{
+  "name": "vp-shipping-rate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "webpack --mode production ./assets/js/admin.js --output-path ./assets/js --output-filename admin.min.js",
+    "build:css": "sass ./assets/css/admin.scss ./assets/css/admin.css",
+    "watch:js": "webpack --mode development --watch ./assets/js/admin.js --output-path ./assets/js --output-filename admin.min.js",
+    "watch:css": "sass --watch ./assets/css/admin.scss ./assets/css/admin.css",
+    "build": "npm run build:js && npm run build:css",
+    "watch": "npm run watch:js & npm run watch:css"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

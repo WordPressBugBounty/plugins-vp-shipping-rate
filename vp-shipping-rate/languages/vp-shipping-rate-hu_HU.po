@@ -1,0 +1,380 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VP Shipping Rate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-05 21:35+0000\n"
+"PO-Revision-Date: 2026-05-22 18:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: Magyar\n"
+"Language: hu_HU\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.1; wp-6.9.1; php-8.4.4\n"
+"X-Domain: vp-shipping-rate"
+
+#: includes/views/html-admin-pricing-table.php:38
+#: includes/views/html-admin-pricing-table.php:105
+msgid "Add a note or title to identify this rule"
+msgstr "Adj hozzá megjegyzést vagy címet az ár beazonosításához"
+
+#: includes/views/html-admin-pricing-table.php:77
+#: includes/views/html-admin-pricing-table.php:140
+msgid "Add condition"
+msgstr "Új feltétel"
+
+#: includes/views/html-admin-pricing-table.php:84
+msgid "Add new cost"
+msgstr "Új ár hozzáadása"
+
+#: includes/class-shipping-rate.php:13
+#| msgid "VP Shipping Rate"
+msgctxt "admin"
+msgid "Extra Shipping Rate"
+msgstr "Extra Szállítási Mód"
+
+#: includes/views/html-admin-pricing-table.php:71
+#: includes/views/html-admin-pricing-table.php:134
+msgid "All"
+msgstr "Összes"
+
+#: includes/views/html-admin-pricing-table.php:69
+#: includes/views/html-admin-pricing-table.php:132
+msgid "Apply this pricing, if"
+msgstr "Ár alkalmazása, ha az"
+
+#: includes/class-conditions.php:60
+msgid "Billing country"
+msgstr "Számlázási ország"
+
+#: includes/class-conditions.php:21
+msgid "Cart Total"
+msgstr "Kosár végösszeg"
+
+#: includes/class-conditions.php:25
+msgid "Cart Total(with discount)"
+msgstr "Kosár végösszeg(kedvezménnyel)"
+
+#: vp-shipping-rate.php:50
+msgid "Cloning this object is forbidden."
+msgstr "Cloning this object is forbidden."
+
+#: includes/class-conditions.php:56
+msgid "Company"
+msgstr "Cég"
+
+#: includes/class-conditions.php:64
+msgid "Current date"
+msgstr "Dátum"
+
+#: includes/class-conditions.php:72
+msgid "Current day"
+msgstr "Nap"
+
+#: includes/class-conditions.php:68
+msgid "Current time"
+msgstr "Idő"
+
+#: includes/settings-instance.php:23
+msgid "Default cost"
+msgstr "Alapértelmezett szállítási költség"
+
+#: includes/views/html-admin-pricing-table.php:47
+#: includes/views/html-admin-pricing-table.php:114
+msgid "delete"
+msgstr "törlés"
+
+#: includes/settings-instance.php:32
+msgid "Detailed cost"
+msgstr "Részletes árazás"
+
+#: includes/settings-instance.php:60
+msgid "Disable cash on delivery if this shipping method is selected"
+msgstr "Utánvét kikapcsolása, ha ez a szállítási mód van kiválasztva"
+
+#: includes/settings-instance.php:59
+msgid "Disable COD"
+msgstr "Utánvét kikapcsolása"
+
+#: includes/views/html-admin-pricing-table.php:46
+#: includes/views/html-admin-pricing-table.php:113
+msgid "duplicate"
+msgstr "duplikál"
+
+#: includes/settings-instance.php:26
+msgid ""
+"Enter a default price for this shipping option. You can overwrite this later "
+"based on conditional logic."
+msgstr ""
+"Adj meg egy alapértelmezett árat ehhez a szállítási módhoz. A részletes "
+"áraknál felülírhatod feltételek alapján."
+
+#: includes/views/html-admin-pricing-table.php:154
+msgid "equal"
+msgstr "egyenlő"
+
+#. Name of the plugin
+msgid "Extra Shipping Rates for WooCommerce"
+msgstr "WooCommerce Extra Szállítási Díjak"
+
+#: vp-shipping-rate.php:251 vp-shipping-rate.php:258
+msgid "free"
+msgstr "ingyenes"
+
+#: includes/settings-instance.php:54
+msgid "Free shipping"
+msgstr "Ingyenes szállítás"
+
+#: includes/settings-instance.php:49
+msgid "Free shipping coupon"
+msgstr "Ingyenes szállítás kupon"
+
+#: includes/settings-instance.php:50
+msgid "Free shipping coupon applies to this rate"
+msgstr "Az ingyenes szállítás kupon érvényes erre a szállítási módra is"
+
+#: includes/class-conditions.php:78
+msgid "Friday"
+msgstr "Hétfő"
+
+#: includes/views/html-admin-pricing-table.php:157
+msgid "greater or equal"
+msgstr "nagyobb, vagy egyenlő"
+
+#: includes/views/html-admin-pricing-table.php:156
+msgid "greater than"
+msgstr "nagyobb"
+
+#: includes/settings-instance.php:43
+msgid "Highest"
+msgstr "Drágább"
+
+#: includes/settings-instance.php:44
+msgid "Highest, but with free shipping"
+msgstr "Drágább, de ingyenes szállítással"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://visztpeter.me"
+msgstr "https://visztpeter.me"
+
+#: includes/settings-instance.php:55
+msgid "If free shipping is available, make this rate free too"
+msgstr "Ha van ingyenes szállítás, legyen ez is ingyenes"
+
+#: includes/settings-instance.php:40
+msgid ""
+"If theres multiple matches for the shipping cost, use the lowest or the "
+"highest cost."
+msgstr ""
+"Ha több szállítási költség is érvényes, akkor a legolcsóbbat, vagy a "
+"legdrágább árat használja."
+
+#: includes/class-conditions.php:55
+msgid "Individual"
+msgstr "Magánszemély"
+
+#: includes/class-conditions.php:37
+msgid "Items in cart"
+msgstr "Kosár termék darabszám"
+
+#: includes/class-conditions.php:41
+msgid "Items in condition"
+msgstr "Termékek a feltételben"
+
+#: includes/views/html-admin-pricing-table.php:159
+msgid "less or equal"
+msgstr "kevesebb, vagy egyenlő"
+
+#: includes/views/html-admin-pricing-table.php:158
+msgid "less than"
+msgstr "kevesebb"
+
+#: includes/settings-instance.php:42
+msgid "Lowest"
+msgstr "Olcsóbb"
+
+#: includes/views/html-admin-pricing-table.php:59
+#: includes/views/html-admin-pricing-table.php:122
+#, php-format
+#| msgid "Max weight(kg)"
+msgid "Max weight(%s)"
+msgstr "Max súly(%s)"
+
+#: includes/settings-instance.php:6
+msgid "Method title"
+msgstr "Szállítási mód neve"
+
+#: includes/views/html-admin-pricing-table.php:58
+#: includes/views/html-admin-pricing-table.php:121
+#, php-format
+#| msgid "Min weight(kg)"
+msgid "Min weight(%s)"
+msgstr "Minimum súly(%s)"
+
+#: includes/class-conditions.php:74
+msgid "Monday"
+msgstr "Hétfő"
+
+#: includes/settings-instance.php:36
+msgid "Multiple cost logic"
+msgstr "Árazás logika"
+
+#: includes/class-conditions.php:91
+msgid "No"
+msgstr "Nem"
+
+#: includes/views/html-admin-pricing-table.php:155
+msgid "not equal"
+msgstr "nem egyenlő"
+
+#: includes/views/html-admin-pricing-table.php:74
+#: includes/views/html-admin-pricing-table.php:137
+msgid "of the following match"
+msgstr "feltétel teljesül"
+
+#: includes/views/html-admin-pricing-table.php:72
+#: includes/views/html-admin-pricing-table.php:135
+msgid "One"
+msgstr "Egy"
+
+#: includes/views/html-admin-pricing-table.php:52
+#: includes/views/html-admin-pricing-table.php:98
+msgid "Optional note or title for this rule"
+msgstr "Opcionális megjegyzés vagy cím ehhez az árhoz"
+
+#: includes/class-conditions.php:53
+msgid "Order type"
+msgstr "Rendelés típusa"
+
+#: includes/class-conditions.php:33
+msgid "Package longest side"
+msgstr "Csomag leghosszabb mérete"
+
+#: includes/class-conditions.php:29
+msgid "Package volume"
+msgstr "Csomag térfogat"
+
+#: includes/class-conditions.php:99
+msgid "Package weight"
+msgstr "Csomag súly"
+
+#: includes/class-conditions.php:84
+msgid "Payment method"
+msgstr "Fizetési mód"
+
+#: includes/class-conditions.php:45
+msgid "Product category"
+msgstr "Termék kategória"
+
+#: includes/class-conditions.php:79
+msgid "Saturday"
+msgstr "Szombat"
+
+#. Description of the plugin
+#| msgid ""
+#| "Setup shipping rates based on various conditions such as weight, number "
+#| "of items, shipping class, price, cart total, and much more."
+msgid ""
+"Setup shipping rates based on various conditions such as weight, number of "
+"items, shipping class, price, cart total and much more."
+msgstr ""
+"Állítsd be a szállítási díjakat különböző feltételek, például a súly, a "
+"tételek száma, a szállítási osztály, az ár, a kosár végösszege és még sok "
+"más alapján."
+
+#: includes/class-conditions.php:49
+msgid "Shipping class"
+msgstr "Szállítási osztály"
+
+#: includes/views/html-admin-pricing-table.php:35
+#: includes/views/html-admin-pricing-table.php:60
+#: includes/views/html-admin-pricing-table.php:102
+#: includes/views/html-admin-pricing-table.php:123
+msgid "Shipping cost(net)"
+msgstr "Szállítási költség(nettó)"
+
+#: includes/settings-instance.php:9
+msgctxt "shipping method default name"
+msgid "Shipping Rate"
+msgstr "Házhozszállítás"
+
+#: includes/class-shipping-rate.php:14
+msgid "Shipping rate based on various conditions. "
+msgstr "Szállítási mód különböző feltételek alapján"
+
+#: includes/settings-instance.php:45
+msgid "Sum"
+msgstr "Összeadás"
+
+#: includes/class-conditions.php:80
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: includes/settings-instance.php:13
+msgid "Tax status"
+msgstr "Adózás"
+
+#: includes/settings-instance.php:19
+msgctxt "Tax status"
+msgid "None"
+msgstr "Nem"
+
+#: includes/settings-instance.php:18
+msgid "Taxable"
+msgstr "Adóköteles"
+
+#: includes/settings-instance.php:8
+msgid "This controls the title which the user sees during checkout."
+msgstr "Ezt a nevet látja a vásárló a fizetés során."
+
+#: includes/class-conditions.php:77
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: includes/views/html-admin-pricing-table.php:87
+#, php-format
+msgid ""
+"Tip: if you want to hide this shipping method, enter -1 as the cost and if "
+"the conditions match, this method will be hidden. You can use dots or commas "
+"for decimal points. Measurements: %s and %s."
+msgstr ""
+"Tipp: ha el akarod rejteni ezt a szállítási módot, adj meg -1-et költségként,"
+" és ha a feltételek egyeznek, ez a szállítási mód el lesz rejtve. A "
+"tizedesvesszőket pontokkal vagy vesszőkkel használd. Mértékegységek: %s és "
+"%s."
+
+#: includes/class-conditions.php:75
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: vp-shipping-rate.php:55
+msgid "Unserializing instances of this class is forbidden."
+msgstr "Unserializing instances of this class is forbidden."
+
+#: includes/class-conditions.php:88
+msgid "User logged in"
+msgstr "Felhasználó belépve"
+
+#: includes/class-conditions.php:95
+msgid "User role"
+msgstr "Felhasználó szerepkör"
+
+#. Author of the plugin
+msgid "Viszt Péter"
+msgstr "Viszt Péter"
+
+#: includes/class-conditions.php:76
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: includes/views/html-admin-pricing-table.php:41
+#: includes/views/html-admin-pricing-table.php:108
+msgid "Weight based pricing"
+msgstr "Súly alapú árazás"
+
+#: includes/class-conditions.php:90
+msgid "Yes"
+msgstr "Igen"

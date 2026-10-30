@@ -1,0 +1,364 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: VP Shipping Rate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-22 18:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.1\n"
+"X-Domain: vp-shipping-rate"
+
+#: includes/views/html-admin-pricing-table.php:38
+#: includes/views/html-admin-pricing-table.php:105
+msgid "Add a note or title to identify this rule"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:77
+#: includes/views/html-admin-pricing-table.php:140
+msgid "Add condition"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:84
+msgid "Add new cost"
+msgstr ""
+
+#: includes/class-shipping-rate.php:13
+msgctxt "admin"
+msgid "Extra Shipping Rate"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:71
+#: includes/views/html-admin-pricing-table.php:134
+msgid "All"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:69
+#: includes/views/html-admin-pricing-table.php:132
+msgid "Apply this pricing, if"
+msgstr ""
+
+#: includes/class-conditions.php:60
+msgid "Billing country"
+msgstr ""
+
+#: includes/class-conditions.php:21
+msgid "Cart Total"
+msgstr ""
+
+#: includes/class-conditions.php:25
+msgid "Cart Total(with discount)"
+msgstr ""
+
+#: vp-shipping-rate.php:50
+msgid "Cloning this object is forbidden."
+msgstr ""
+
+#: includes/class-conditions.php:56
+msgid "Company"
+msgstr ""
+
+#: includes/class-conditions.php:64
+msgid "Current date"
+msgstr ""
+
+#: includes/class-conditions.php:72
+msgid "Current day"
+msgstr ""
+
+#: includes/class-conditions.php:68
+msgid "Current time"
+msgstr ""
+
+#: includes/settings-instance.php:23
+msgid "Default cost"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:47
+#: includes/views/html-admin-pricing-table.php:114
+msgid "delete"
+msgstr ""
+
+#: includes/settings-instance.php:32
+msgid "Detailed cost"
+msgstr ""
+
+#: includes/settings-instance.php:60
+msgid "Disable cash on delivery if this shipping method is selected"
+msgstr ""
+
+#: includes/settings-instance.php:59
+msgid "Disable COD"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:46
+#: includes/views/html-admin-pricing-table.php:113
+msgid "duplicate"
+msgstr ""
+
+#: includes/settings-instance.php:26
+msgid ""
+"Enter a default price for this shipping option. You can overwrite this later "
+"based on conditional logic."
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:154
+msgid "equal"
+msgstr ""
+
+#. Name of the plugin
+msgid "Extra Shipping Rates for WooCommerce"
+msgstr ""
+
+#: vp-shipping-rate.php:251 vp-shipping-rate.php:258
+msgid "free"
+msgstr ""
+
+#: includes/settings-instance.php:54
+msgid "Free shipping"
+msgstr ""
+
+#: includes/settings-instance.php:49
+msgid "Free shipping coupon"
+msgstr ""
+
+#: includes/settings-instance.php:50
+msgid "Free shipping coupon applies to this rate"
+msgstr ""
+
+#: includes/class-conditions.php:78
+msgid "Friday"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:157
+msgid "greater or equal"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:156
+msgid "greater than"
+msgstr ""
+
+#: includes/settings-instance.php:43
+msgid "Highest"
+msgstr ""
+
+#: includes/settings-instance.php:44
+msgid "Highest, but with free shipping"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://visztpeter.me"
+msgstr ""
+
+#: includes/settings-instance.php:55
+msgid "If free shipping is available, make this rate free too"
+msgstr ""
+
+#: includes/settings-instance.php:40
+msgid ""
+"If theres multiple matches for the shipping cost, use the lowest or the "
+"highest cost."
+msgstr ""
+
+#: includes/class-conditions.php:55
+msgid "Individual"
+msgstr ""
+
+#: includes/class-conditions.php:37
+msgid "Items in cart"
+msgstr ""
+
+#: includes/class-conditions.php:41
+msgid "Items in condition"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:159
+msgid "less or equal"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:158
+msgid "less than"
+msgstr ""
+
+#: includes/settings-instance.php:42
+msgid "Lowest"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:59
+#: includes/views/html-admin-pricing-table.php:122
+#, php-format
+msgid "Max weight(%s)"
+msgstr ""
+
+#: includes/settings-instance.php:6
+msgid "Method title"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:58
+#: includes/views/html-admin-pricing-table.php:121
+#, php-format
+msgid "Min weight(%s)"
+msgstr ""
+
+#: includes/class-conditions.php:74
+msgid "Monday"
+msgstr ""
+
+#: includes/settings-instance.php:36
+msgid "Multiple cost logic"
+msgstr ""
+
+#: includes/class-conditions.php:91
+msgid "No"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:155
+msgid "not equal"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:74
+#: includes/views/html-admin-pricing-table.php:137
+msgid "of the following match"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:72
+#: includes/views/html-admin-pricing-table.php:135
+msgid "One"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:52
+#: includes/views/html-admin-pricing-table.php:98
+msgid "Optional note or title for this rule"
+msgstr ""
+
+#: includes/class-conditions.php:53
+msgid "Order type"
+msgstr ""
+
+#: includes/class-conditions.php:33
+msgid "Package longest side"
+msgstr ""
+
+#: includes/class-conditions.php:29
+msgid "Package volume"
+msgstr ""
+
+#: includes/class-conditions.php:99
+msgid "Package weight"
+msgstr ""
+
+#: includes/class-conditions.php:84
+msgid "Payment method"
+msgstr ""
+
+#: includes/class-conditions.php:45
+msgid "Product category"
+msgstr ""
+
+#: includes/class-conditions.php:79
+msgid "Saturday"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Setup shipping rates based on various conditions such as weight, number of "
+"items, shipping class, price, cart total and much more."
+msgstr ""
+
+#: includes/class-conditions.php:49
+msgid "Shipping class"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:35
+#: includes/views/html-admin-pricing-table.php:60
+#: includes/views/html-admin-pricing-table.php:102
+#: includes/views/html-admin-pricing-table.php:123
+msgid "Shipping cost(net)"
+msgstr ""
+
+#: includes/settings-instance.php:9
+msgctxt "shipping method default name"
+msgid "Shipping Rate"
+msgstr ""
+
+#: includes/class-shipping-rate.php:14
+msgid "Shipping rate based on various conditions. "
+msgstr ""
+
+#: includes/settings-instance.php:45
+msgid "Sum"
+msgstr ""
+
+#: includes/class-conditions.php:80
+msgid "Sunday"
+msgstr ""
+
+#: includes/settings-instance.php:13
+msgid "Tax status"
+msgstr ""
+
+#: includes/settings-instance.php:19
+msgctxt "Tax status"
+msgid "None"
+msgstr ""
+
+#: includes/settings-instance.php:18
+msgid "Taxable"
+msgstr ""
+
+#: includes/settings-instance.php:8
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-conditions.php:77
+msgid "Thursday"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:87
+#, php-format
+msgid ""
+"Tip: if you want to hide this shipping method, enter -1 as the cost and if "
+"the conditions match, this method will be hidden. You can use dots or commas "
+"for decimal points. Measurements: %s and %s."
+msgstr ""
+
+#: includes/class-conditions.php:75
+msgid "Tuesday"
+msgstr ""
+
+#: vp-shipping-rate.php:55
+msgid "Unserializing instances of this class is forbidden."
+msgstr ""
+
+#: includes/class-conditions.php:88
+msgid "User logged in"
+msgstr ""
+
+#: includes/class-conditions.php:95
+msgid "User role"
+msgstr ""
+
+#. Author of the plugin
+msgid "Viszt Péter"
+msgstr ""
+
+#: includes/class-conditions.php:76
+msgid "Wednesday"
+msgstr ""
+
+#: includes/views/html-admin-pricing-table.php:41
+#: includes/views/html-admin-pricing-table.php:108
+msgid "Weight based pricing"
+msgstr ""
+
+#: includes/class-conditions.php:90
+msgid "Yes"
+msgstr ""

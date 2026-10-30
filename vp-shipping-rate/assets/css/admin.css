@@ -1,0 +1,256 @@
+.vp-shipping-rate-settings-pricing {
+  border-radius: 4px;
+  border: 1px solid #8c8f94;
+  background: #fff;
+  margin: 0 0 10px 0;
+  max-width: 750px;
+}
+.vp-shipping-rate-settings-pricing-add {
+  padding: 0 0 5px 0;
+}
+.vp-shipping-rate-settings-pricing-add a.button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  padding: 0 10px 0 6px;
+  margin: 0 0 10px 0;
+  float: left;
+}
+.vp-shipping-rate-settings-pricing-add a.button .dashicons {
+  line-height: 1 !important;
+}
+.vp-shipping-rate-settings-pricing-add a.button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.vp-shipping-rate-settings-pricing-add a.button span:first-child {
+  margin-right: 6px;
+}
+.vp-shipping-rate-settings-pricing-add p.description {
+  max-width: 750px;
+  clear: both;
+}
+.vp-shipping-rate-settings-pricing-comment {
+  padding: 0;
+}
+.vp-shipping-rate-settings-pricing-comment .comment-display {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #666;
+  border-bottom: 1px solid #CCD0D4;
+}
+.vp-shipping-rate-settings-pricing-comment .comment-display:empty {
+  display: none;
+}
+.vp-shipping-rate-settings-pricing-comment input.comment-field {
+  display: none;
+  width: 100% !important;
+  max-width: 100%;
+}
+.vp-shipping-rate-settings-pricing-comment.editing {
+  padding: 10px 20px;
+  border-bottom: 1px solid #CCD0D4;
+}
+.vp-shipping-rate-settings-pricing-comment.editing input.comment-field {
+  display: block;
+}
+.vp-shipping-rate-settings-pricing-comment.editing .comment-display {
+  display: none;
+}
+.vp-shipping-rate-settings-pricing-title {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid #CCD0D4;
+  background: #fafafa;
+  border-radius: 5px 5px 0 0;
+}
+.vp-shipping-rate-settings-pricing-title .cost-field {
+  display: flex;
+  margin-right: 10px;
+}
+.vp-shipping-rate-settings-pricing-title .cost-field small {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  font-size: 14px;
+  border: 1px solid #8c8f94;
+  margin-left: -1px;
+}
+.vp-shipping-rate-settings-pricing-title .cost-field input {
+  width: auto !important;
+  border-radius: 5px 0 0 5px;
+}
+.vp-shipping-rate-settings-pricing-title > .edit-comment {
+  color: #666;
+  text-decoration: none;
+  line-height: 1;
+  margin-right: auto;
+}
+.vp-shipping-rate-settings-pricing-title > .edit-comment:hover {
+  color: #2271b1;
+}
+.vp-shipping-rate-settings-pricing-title span.text {
+  margin: 0 10px;
+}
+.vp-shipping-rate-settings-pricing-title .weight-toggle {
+  margin-right: 10px;
+}
+.vp-shipping-rate-settings-pricing-title .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vp-shipping-rate-settings-pricing-title .actions a {
+  text-decoration: none;
+}
+.vp-shipping-rate-settings-pricing-title .actions a.delete-pricing {
+  color: #a00;
+}
+.vp-shipping-rate-settings-pricing-weight {
+  border-bottom: 1px solid #CCD0D4;
+  padding: 20px 20px 12px 20px;
+}
+.vp-shipping-rate-settings-pricing-weight select, .vp-shipping-rate-settings-pricing-weight input {
+  width: auto !important;
+  line-height: 24px !important;
+  min-height: 0px !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+.vp-shipping-rate-settings-pricing-weight .cost-field {
+  display: flex;
+}
+.vp-shipping-rate-settings-pricing-weight .cost-field small {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0px 6px;
+  line-height: 24px;
+  border-radius: 0 5px 5px 0;
+  font-size: 14px;
+  border: 1px solid #8c8f94;
+  margin-left: -1px;
+}
+.vp-shipping-rate-settings-pricing-weight .cost-field input {
+  width: 100% !important;
+  border-radius: 5px 0 0 5px;
+}
+.vp-shipping-rate-settings-pricing-weight table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.vp-shipping-rate-settings-pricing-weight table td, .vp-shipping-rate-settings-pricing-weight table th {
+  padding: 0 8px 8px 0;
+  margin: 0;
+}
+.vp-shipping-rate-settings-pricing-weight table thead th {
+  font-weight: normal;
+  color: #666;
+  padding-top: 0 !important;
+}
+.vp-shipping-rate-settings-pricing-weight table tbody td a {
+  width: 27px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 27px;
+  text-decoration: none;
+  color: #CCCCCC;
+}
+.vp-shipping-rate-settings-pricing-weight table tbody td:last-child div {
+  display: flex;
+}
+.vp-shipping-rate-settings-pricing-weight table tbody tr:first-child td a.delete-weight-row {
+  visibility: hidden;
+}
+.vp-shipping-rate-settings-pricing-if {
+  padding: 20px 20px 12px 20px;
+}
+.vp-shipping-rate-settings-pricing-if-header {
+  display: flex;
+  align-items: center;
+  color: #666666;
+  padding-bottom: 8px;
+}
+.vp-shipping-rate-settings-pricing-if-header select {
+  margin: 0 10px !important;
+  width: auto !important;
+  line-height: 24px !important;
+  min-height: 0px !important;
+}
+.vp-shipping-rate-settings-pricing-if .add-condition {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  outline: none;
+}
+.vp-shipping-rate-settings-pricing-if .add-condition:focus {
+  outline: none;
+  box-shadow: none;
+}
+.vp-shipping-rate-settings-pricing-if-options {
+  margin: 0;
+  padding: 0 0 0 0;
+  list-style-type: none;
+}
+.vp-shipping-rate-settings-pricing-if-options select, .vp-shipping-rate-settings-pricing-if-options input {
+  width: auto !important;
+  line-height: 24px !important;
+  min-height: 0px !important;
+}
+.vp-shipping-rate-settings-pricing-if-options li {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px 0;
+}
+.vp-shipping-rate-settings-pricing-if-options li select, .vp-shipping-rate-settings-pricing-if-options li input[type=text] {
+  margin-right: 8px !important;
+}
+.vp-shipping-rate-settings-pricing-if-options li select.value, .vp-shipping-rate-settings-pricing-if-options li input[type=text].value {
+  display: none;
+}
+.vp-shipping-rate-settings-pricing-if-options li select.value.selected, .vp-shipping-rate-settings-pricing-if-options li input[type=text].value.selected {
+  display: block;
+}
+.vp-shipping-rate-settings-pricing-if-options li a {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 27px;
+  text-decoration: none;
+  color: #CCCCCC;
+}
+.vp-shipping-rate-settings-pricing-option {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.vp-shipping-rate-settings-pricing-option small {
+  position: absolute;
+  line-height: 34px;
+  bottom: 0;
+  padding-right: 10px;
+  right: 0;
+}
+.vp-shipping-rate-settings-pricing-option input[type=text], .vp-shipping-rate-settings-pricing-option select {
+  width: 100% !important;
+}
+.vp-shipping-rate-settings-pricing-option input[type=text] {
+  padding: 2px 8px !important;
+}
+.vp-shipping-rate-settings-pricing-option input[type=checkbox] {
+  margin-top: 9px;
+}
+.vp-shipping-rate-settings-pricing-option label {
+  margin: 0 0 5px 0;
+  display: block;
+}
+
+/*# sourceMappingURL=admin.css.map */
