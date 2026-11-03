@@ -327,7 +327,7 @@ msgstr ""
 msgid ""
 "Tip: if you want to hide this shipping method, enter -1 as the cost and if "
 "the conditions match, this method will be hidden. You can use dots or commas "
-"for decimal points. Measurements: %s and %s."
+"for decimal points. Measurements: %1$s and %2$s."
 msgstr ""
 
 #: includes/class-conditions.php:75

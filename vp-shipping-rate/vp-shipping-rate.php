@@ -7,13 +7,14 @@ Author: Viszt Péter
 Author URI: https://visztpeter.me
 Text Domain: vp-shipping-rate
 Domain Path: /languages/
-Version: 1.4
+Version: 1.4.1
 WC requires at least: 8.0
 WC tested up to: 10.7.0
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires Plugins: woocommerce
 */
+use Automattic\Jetpack\Constants;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -47,12 +48,12 @@ class VP_Shipping_Rate {
 
 	//Just for a little extra security
 	public function __clone() {
-		_doing_it_wrong( __FUNCTION__, __( 'Cloning this object is forbidden.', 'vp-shipping-rate' ) );
+		_doing_it_wrong( __FUNCTION__, esc_html__( 'Cloning this object is forbidden.', 'vp-shipping-rate' ), esc_html( VP_Shipping_Rate::$version ) );
 	}
 
 	//Just for a little extra security
 	public function __wakeup() {
-		_doing_it_wrong( __FUNCTION__, __( 'Unserializing instances of this class is forbidden.', 'vp-shipping-rate' ) );
+		_doing_it_wrong( __FUNCTION__, esc_html__( 'Unserializing instances of this class is forbidden.', 'vp-shipping-rate' ), esc_html( VP_Shipping_Rate::$version ) );
 	}
 
 	//Construct
@@ -62,7 +63,7 @@ class VP_Shipping_Rate {
 		self::$plugin_prefix = 'vp_shipping_rate';
 		self::$plugin_basename = plugin_basename(__FILE__);
 		self::$plugin_path = trailingslashit(dirname(__FILE__));
-		self::$version = '1.4';
+		self::$version = '1.4.1';
 		self::$plugin_url = plugin_dir_url(self::$plugin_basename);
 		self::$plugin_slug = 'vp-shipping-rate';
 
@@ -90,7 +91,7 @@ class VP_Shipping_Rate {
 		add_action( 'woocommerce_checkout_update_order_review', array( $this, 'shipping_method_selected' ));
 
 		//Free shipping if another free shipping method exists
-		add_filter( 'woocommerce_package_rates', array($this, 'free_shipping_when_free_shipping_exists'), 10, 2);
+		add_filter( 'woocommerce_package_rates', array($this, 'free_shipping_when_free_shipping_exists'), 101, 2);
 
 		//Checkout block compatibility for payment methods
 		add_action('woocommerce_blocks_loaded', array($this, 'update_payment_method_in_session'));
@@ -101,6 +102,9 @@ class VP_Shipping_Rate {
 		//Indicate free shipping in the name
 		add_filter('woocommerce_cart_shipping_method_full_label', array($this, 'free_shipping_label'), 10, 2);
 		add_filter('woocommerce_order_shipping_to_display', array( $this, 'display_cost_in_emails'), 10, 3);
+		
+		//Debug mode
+		add_action('woocommerce_load_shipping_methods', array($this, 'show_debug_notice'));
 		
 	}
 	
@@ -164,7 +168,7 @@ class VP_Shipping_Rate {
 	public function free_shipping_when_free_shipping_exists($rates, $package) {
 		$has_free_shipping = false;
 		foreach ( $rates as $rate_id => $rate ) {
-			if((float)$rate->get_cost() == 0 && $rate->get_method_id() != 'vp_shipping_rate' && $rate->get_method_id() != 'local_pickup') {
+			if((float)$rate->get_cost() == 0 && $rate->get_method_id() != 'vp_shipping_rate' && $rate->get_method_id() != 'local_pickup' && $rate->get_method_id() != 'vp_pont') {
 				$has_free_shipping = true;
 				break;
 			}
@@ -209,8 +213,8 @@ class VP_Shipping_Rate {
 			woocommerce_store_api_register_update_callback([
 				'namespace' => 'vp-shipping-rate',
 				'callback'  => function( $data ) {
-					if(isset($data['payment_method'])) {
-						WC()->session->set('vp_shipping_rate_chosen_payment_method', $data['payment_method']);
+					if(isset($data['payment_method']) && is_string($data['payment_method'])) {
+						WC()->session->set('vp_shipping_rate_chosen_payment_method', sanitize_text_field($data['payment_method']));
 						WC()->cart->calculate_shipping();
 						WC()->cart->calculate_totals();
 
@@ -258,6 +262,43 @@ class VP_Shipping_Rate {
 			$shipping = $shipping.' ('.esc_html__( 'free', 'vp-shipping-rate' ).')';
 		}
 		return $shipping;
+	}
+
+	//Show the cart details used for condition matching if WooCommerce shipping debug mode is enabled
+	public function show_debug_notice($package) {
+		if ( empty( $package ) || ! WC()->cart || ! WC()->session ) {
+			return;
+		}
+
+		//Only for shop managers, when debug mode is enabled
+		$debug_mode = 'yes' === get_option( 'woocommerce_shipping_debug_mode', 'no' );
+		if(!$debug_mode || !current_user_can('manage_woocommerce')) {
+			return;
+		}
+
+		$cart_details = VP_Shipping_Rate_Conditions::get_cart_details('pricings');
+
+		//Convert cart details array to a printable notice
+		$lines = array();
+		foreach ($cart_details as $key => $value) {
+			if(is_array($value)) {
+				$values = array();
+				foreach ($value as $sub_key => $sub_value) {
+					$values[] = is_int($sub_key) ? $sub_value : $sub_key.': '.$sub_value;
+				}
+				$value = implode(', ', array_unique($values));
+			} elseif(is_bool($value)) {
+				$value = $value ? 'true' : 'false';
+			}
+			$lines[] = '<strong>'.esc_html($key).'</strong>: '.esc_html(($value === '' || $value === null) ? '-' : $value);
+		}
+
+		$notice = '<strong>'.esc_html_x( 'Extra Shipping Rate', 'admin', 'vp-shipping-rate' ).'</strong><br>'.implode('<br>', $lines);
+
+		//Shipping is calculated multiple times per request(and per package), so avoid duplicates
+		if ( ! Constants::is_defined( 'WOOCOMMERCE_CHECKOUT' ) && ! Constants::is_defined( 'WC_DOING_AJAX' ) && ! wc_has_notice( $notice ) ) {
+			wc_add_notice($notice);
+		}
 	}
 
 }

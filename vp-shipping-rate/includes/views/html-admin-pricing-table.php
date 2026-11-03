@@ -43,8 +43,8 @@ $length_unit = get_option('woocommerce_dimension_unit');
 							<div class="actions">
 								<a href="#" class="move-up"><span class="dashicons dashicons-arrow-up-alt2"></span></a>
 								<a href="#" class="move-down"><span class="dashicons dashicons-arrow-down-alt2"></span></a>
-								<a href="#" class="duplicate-pricing"><?php _e('duplicate', 'vp-shipping-rate'); ?></a>
-								<a href="#" class="delete-pricing"><?php _e('delete', 'vp-shipping-rate'); ?></a>
+								<a href="#" class="duplicate-pricing"><?php esc_html_e('duplicate', 'vp-shipping-rate'); ?></a>
+								<a href="#" class="delete-pricing"><?php esc_html_e('delete', 'vp-shipping-rate'); ?></a>
 							</div>
 						</div>
 						<div class="vp-shipping-rate-settings-pricing-comment">
@@ -55,13 +55,15 @@ $length_unit = get_option('woocommerce_dimension_unit');
 							<table>
 								<thead>
 									<tr>
+										<?php /* translators: %s: Weight unit */ ?>
 										<th><?php echo esc_html(sprintf(__('Min weight(%s)', 'vp-shipping-rate'), $weight_unit)); ?></th>
+										<?php /* translators: %s: Weight unit */ ?>
 										<th><?php echo esc_html(sprintf(__('Max weight(%s)', 'vp-shipping-rate'), $weight_unit)); ?></th>
 										<th><?php esc_html_e('Shipping cost(net)', 'vp-shipping-rate'); ?></th>
 										<th></th>
 									</tr>
 								</thead>
-								<tbody class="vp-shipping-rate-settings-pricing-weight-options" <?php if(isset($pricing['weight_ranges'])): ?>data-options="<?php echo esc_attr(json_encode($pricing['weight_ranges'])); ?>"<?php endif; ?>></tbody>
+								<tbody class="vp-shipping-rate-settings-pricing-weight-options" <?php if(isset($pricing['weight_ranges'])): ?>data-options="<?php echo esc_attr(wp_json_encode($pricing['weight_ranges'])); ?>"<?php endif; ?>></tbody>
 							</table>
 						</div>
 						<div class="vp-shipping-rate-settings-pricing-if">
@@ -84,7 +86,8 @@ $length_unit = get_option('woocommerce_dimension_unit');
 			<a href="#" class="button add"><span class="dashicons dashicons-plus-alt2"></span> <span><?php esc_html_e('Add new cost', 'vp-shipping-rate'); ?></span></a>
 			<p class="description">
 				<?php
-				echo esc_html(sprintf( __( 'Tip: if you want to hide this shipping method, enter -1 as the cost and if the conditions match, this method will be hidden. You can use dots or commas for decimal points. Measurements: %s and %s.', 'vp-shipping-rate' ), esc_attr($weight_unit), esc_attr($length_unit) ));
+				/* translators: %1$s: Weight unit, %2$s: Dimension unit */
+				echo esc_html(sprintf( __( 'Tip: if you want to hide this shipping method, enter -1 as the cost and if the conditions match, this method will be hidden. You can use dots or commas for decimal points. Measurements: %1$s and %2$s.', 'vp-shipping-rate' ), $weight_unit, $length_unit ));
 				?>
 			</p>
 		</div>
@@ -106,8 +109,8 @@ $length_unit = get_option('woocommerce_dimension_unit');
 			<div class="actions">
 				<a href="#" class="move-up"><span class="dashicons dashicons-arrow-up-alt2"></span></a>
 				<a href="#" class="move-down"><span class="dashicons dashicons-arrow-down-alt2"></span></a>
-				<a href="#" class="duplicate-pricing"><?php _e('duplicate', 'vp-shipping-rate'); ?></a>
-				<a href="#" class="delete-pricing"><?php _e('delete', 'vp-shipping-rate'); ?></a>
+				<a href="#" class="duplicate-pricing"><?php esc_html_e('duplicate', 'vp-shipping-rate'); ?></a>
+				<a href="#" class="delete-pricing"><?php esc_html_e('delete', 'vp-shipping-rate'); ?></a>
 			</div>
 		</div>
 		<div class="vp-shipping-rate-settings-pricing-comment">
@@ -118,7 +121,9 @@ $length_unit = get_option('woocommerce_dimension_unit');
 			<table>
 				<thead>
 					<tr>
+						<?php /* translators: %s: Weight unit */ ?>
 						<th><?php echo esc_html(sprintf(__('Min weight(%s)', 'vp-shipping-rate'), $weight_unit)); ?></th>
+						<?php /* translators: %s: Weight unit */ ?>
 						<th><?php echo esc_html(sprintf(__('Max weight(%s)', 'vp-shipping-rate'), $weight_unit)); ?></th>
 						<th><?php esc_html_e('Shipping cost(net)', 'vp-shipping-rate'); ?></th>
 						<th></th>
@@ -154,9 +159,9 @@ $length_unit = get_option('woocommerce_dimension_unit');
 			<option value="equal" data-applies="all"><?php esc_html_e('equal', 'vp-shipping-rate'); ?></option>
 			<option value="not_equal" data-applies="all"><?php esc_html_e('not equal', 'vp-shipping-rate'); ?></option>
 			<option value="greater" data-applies="numeric"><?php esc_html_e('greater than', 'vp-shipping-rate'); ?></option>
-			<option value="greater_or_equal" data-applies="numeric"><?php _e('greater or equal', 'vp-shipping-rate'); ?></option>
-			<option value="less" data-applies="numeric"><?php _e('less than', 'vp-shipping-rate'); ?></option>
-			<option value="less_or_equal" data-applies="numeric"><?php _e('less or equal', 'vp-shipping-rate'); ?></option>
+			<option value="greater_or_equal" data-applies="numeric"><?php esc_html_e('greater or equal', 'vp-shipping-rate'); ?></option>
+			<option value="less" data-applies="numeric"><?php esc_html_e('less than', 'vp-shipping-rate'); ?></option>
+			<option value="less_or_equal" data-applies="numeric"><?php esc_html_e('less or equal', 'vp-shipping-rate'); ?></option>
 		</select>
 		<?php foreach ($conditions as $condition_id => $condition): ?>
 			<?php if($condition['options']): ?>

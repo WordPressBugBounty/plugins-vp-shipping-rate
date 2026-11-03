@@ -2,9 +2,9 @@
 Contributors: passatgt
 Tags: woocommerce, shipping, conditional, table rate, weight
 Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.0
-Stable tag: 1.4
+Stable tag: 1.4.1
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://vp-plugins.com/
@@ -46,6 +46,11 @@ Are you tired of complex shipping setups and rigid pricing structures? Look no f
 1. Settings screen(WooCommerce / Settings / Shipping)
 
 == Changelog ==
+
+= 1.4.1 =
+* Security hardening: output escaping and input sanitizing improvements
+* If shipping debug mode is enabled, details about the cart conditions will be displayed on the cart & checkout page
+* Marked compatible with the latest WP version
 
 = 1.4 =
 * Duplicate pricing will copy select field values too
